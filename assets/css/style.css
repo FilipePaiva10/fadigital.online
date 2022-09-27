@@ -66,6 +66,10 @@ a {
     text-decoration: none;
 }
 
+.sideList li {
+    margin-bottom: 15px;
+}
+
 
 .icon-size {
     font-size: 60px;
@@ -193,6 +197,7 @@ section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    row-gap: 60px;
 
     margin: 35px 0;
 }
@@ -273,6 +278,7 @@ section {
 
     .item{ 
         margin-top: 30px;
+        row-gap: 0px;
     }
 
     

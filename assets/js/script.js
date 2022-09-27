@@ -29,6 +29,7 @@ const showAside = (set) => {
     let sideBar = window.document.getElementById("side");
 
     if(set) {
+        sideBar.style.display = "block";
         sideBar.style.width = "70vw";
     } else {
         sideBar.style.width = "0";
