@@ -224,6 +224,10 @@ section {
         display: none;
     }
 
+    .title h1 {
+        font-size: 28px;
+    }
+
     .item{ 
         margin-top: 30px;
     }
