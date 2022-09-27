@@ -47,12 +47,12 @@
         <img src="/assets/img/wpp.png" alt="" srcset="">
     </a>
 
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="/assets/img/logopreta.png" alt="logo">
+    <div id="side" class="side">
+        <div class="sideContainer">
+            <div class="close" onclick="showAside(false)">
+                X
             </div>
-            <ul>
+            <ul class="sideList">
                 <li>Home</li>
                 <li>Serviços</li>
                 <li>Sobre</li>
@@ -63,6 +63,30 @@
                     </a>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/assets/img/logopreta.png" alt="logo">
+            </div>
+            <ul class="list">
+                <li>Home</li>
+                <li>Serviços</li>
+                <li>Sobre</li>
+                <li class="focus">
+                    <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5584998512016&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20empresa.">Fale
+                        conosco
+                    </a>
+                </li>
+            </ul>
+            <div onclick="showAside(true)" class="toogle">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </div>
     </header>
 
@@ -89,27 +113,21 @@
             <div class="services">
                 <div class="item">
                     <div class="icon">
-                        <span style="font-size: 60px;" class="material-symbols-sharp icon-size">
-                            monitoring
-                        </span>
+                        <span style="font-size: 60px;" class="material-symbols-sharp icon-size"></span>
                     </div>
                     <h3><b>Gestão de tráfego</b></h3>
                     <p>lorem ipson lorem ipson lorem ipson lorem ipson</p>
                 </div>
                 <div class="item">
                     <div class="icon">
-                        <span style="font-size: 60px;" class="material-symbols-sharp">
-                            auto_fix_high
-                        </span>
+                        <span style="font-size: 60px;" class="material-symbols-sharp"></span>
                     </div>
                     <h3><b>Social Media</b></h3>
                     <p>lorem ipson lorem ipson lorem ipson lorem ipson</p>
                 </div>
                 <div class="item">
                     <div class="icon">
-                        <span style="font-size: 60px;" class="material-symbols-sharp">
-                            arrow_outward
-                        </span>
+                        <span style="font-size: 60px;" class="material-symbols-sharp"></span>
                     </div>
                     <h3><b>Criação de sites</b></h3>
                     <p>lorem ipson lorem ipson lorem ipson lorem ipson</p>

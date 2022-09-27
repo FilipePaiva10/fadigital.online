@@ -29,6 +29,44 @@ a {
     }
 }
 
+.toogle {
+    width: 30px;
+}
+
+.line {
+    width: 100%;
+    border: 2px solid var(--main-bg-color);
+    margin: 5px 0;
+}
+
+.close {
+    font-size: 40px;
+    font-weight: bold;
+    width: 100%;
+    text-align: right;
+}
+
+.side {
+    display: block;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;   
+    background-color: #FFF;
+    z-index: 10;
+    transition: all ease .5s;
+}
+
+.sideContainer {
+    padding: 15px;
+}
+
+.sideList {
+    list-style: none;
+    text-decoration: none;
+}
+
+
 .icon-size {
     font-size: 60px;
 }
@@ -95,7 +133,7 @@ header{
     border-radius: 10px;
 }
 
-ul {
+.list {
     list-style: none;
     text-decoration: none;
     display: flex;
@@ -200,7 +238,12 @@ section {
 }
 
 
+
 @media (max-width: 768px) {
+
+    .list {
+        display: none;
+    }
 
     .container {
         padding: 0 20px;
@@ -221,7 +264,7 @@ section {
 
     li {
         margin: 0 5px;
-        display: none;
+        
     }
 
     .title h1 {

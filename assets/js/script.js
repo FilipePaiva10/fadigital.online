@@ -22,3 +22,16 @@ const animateTitle = () => {
     }, 150);
 
 }
+
+
+const showAside = (set) => {
+
+    let sideBar = window.document.getElementById("side");
+
+    if(set) {
+        sideBar.style.width = "70vw";
+    } else {
+        sideBar.style.width = "0";
+    }
+
+}
