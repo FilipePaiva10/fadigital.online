@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Red+Hat+Display:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,300;1,400&display=swap');
 
 :root {
     --main-bg-color: rgb(28,28,66);
@@ -31,6 +32,7 @@ a {
 
 .toogle {
     width: 30px;
+    display: none;
 }
 
 .line {
@@ -175,9 +177,15 @@ section {
     margin-top: -200px;
     width: 75%;
     font-size: 60px;
-    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.home-left h5 {
+    margin-top: 20px;
+    font-size: 25px;
     font-weight: 400;
-    font-family: "Anton", sans-serif;
+    font-family: "Red Hat Display", sans-serif;
 }
 
 .home-right {
@@ -250,6 +258,10 @@ section {
         display: none;
     }
 
+    .toogle {
+        display: block;
+    }
+
     .container {
         padding: 0 20px;
     }
@@ -258,6 +270,27 @@ section {
         width: 80px;
         height: auto;
         border-radius: 10px;
+    }
+
+    .section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .section .home-left {
+        
+    }
+
+    .section .home-right {
+        flex: 1;
+    }
+
+    .section .home-right img{
+        height: 150px;
+        width: auto;
+        animation: none;
     }
 
     .services { 

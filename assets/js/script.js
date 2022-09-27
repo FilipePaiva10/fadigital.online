@@ -13,8 +13,14 @@ const animateTitle = () => {
     setInterval(() => {
 
         if (i < length) {
-            element.innerHTML += title[i] === " " ? "&nbsp;" : title[i];
-            i++;
+
+            try {
+                element.innerHTML += title[i] === " " ? "&nbsp;" : title[i];
+                i++;
+                
+            } catch (error) {
+                return;
+            }
         }else {
             return;
         }
