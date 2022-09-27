@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,9 +54,9 @@
                 X
             </div>
             <ul class="sideList">
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Sobre</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
                 <li class="focus">
                     <a target="_blank"
                         href="https://api.whatsapp.com/send?phone=5584998512016&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20empresa.">Fale
@@ -72,9 +73,9 @@
                 <img src="/assets/img/logopreta.png" alt="logo">
             </div>
             <ul class="list">
-                <li>Home</li>
-                <li>Serviços</li>
-                <li>Sobre</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#service">Serviços</a></li>
+                <li><a href="#about">Sobre</a></li>
                 <li class="focus">
                     <a target="_blank"
                         href="https://api.whatsapp.com/send?phone=5584998512016&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20empresa.">Fale
@@ -90,7 +91,7 @@
         </div>
     </header>
 
-    <section class="section" data-toogle="home">
+    <section class="section" id="home">
         <div class="container">
             <div class="home-left">
                 <h1 id="title"></h1>
@@ -102,14 +103,12 @@
         </div>
     </section>
 
-    <section class="section bg-white ph-20" data-toogle="service">
-
+    <section class="section bg-white ph-20" id="service">
         <div class="container">
             <div class="title">
                 <h1>Nossos Serviços</h1>
             </div>
         </div>
-
         <div class="container">
             <div class="services">
                 <div class="item">
@@ -131,7 +130,7 @@
                         <span style="font-size: 60px;" class="material-symbols-sharp"></span>
                     </div>
                     <h3><b>Criação de sites</b></h3>
-                    <p>Tenha um site profissional, responsivo, de alto desempenho e esteja a frente dos seus concorrentes. Oferecemos serviços de Landing Page, Página de Vendas, Institucional e E-commerce.</p>
+                    <p>Tenha um site profissional, responsivo, de alto desempenho e esteja a frente dos seus concorrentes. Oferecemos serviços de Landing Page, Página de Vendas, Institucional e E-commerce. </p>
                 </div>
                 <div class="item">
                     <div class="icon">
@@ -144,7 +143,7 @@
         </div>
     </section>
 
-    <section class="section ph-20" data-toogle="service">
+    <section class="section ph-20" id="about">
         <div class="container">
             <div class="title cl-white">
                 <h1 style="color: white;">Sobre Nós</h1>
@@ -158,8 +157,10 @@
     </section>
 
     <footer>
-        <span>© Todos os direitos Reservados 2022</span> 
-        <span>CNPJ: </span>
+        <div class="container">
+            <span>© Todos os direitos Reservados 2022</span>
+            <span>CNPJ: </span>
+        </div>
     </footer>
 
     <script src="assets/js/script.js"></script>

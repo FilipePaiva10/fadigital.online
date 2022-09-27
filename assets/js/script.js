@@ -1,6 +1,44 @@
 window.onload = () => {
     animateTitle();
-}
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    });
+};
+
+// events
+
+let section = document.querySelectorAll("section");
+let navLinksDesktop = document.querySelectorAll(".list li a");
+
+window.onscroll = () => {
+
+    section.forEach(sec => {
+
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 100;
+        let height = sec.ofssetHeight;
+
+        let id = sec.getAtribute('id');
+
+        if (top >= offset && top < offset + height) {
+
+            navLinksDesktop.forEach(links => {
+                links.classList.remove('active');
+
+                document.querySelector('.list li a[href*=' + id + ']').classList.add("active");
+
+            })
+
+        }
+    })
+
+};
+
+
+// functions
 
 const animateTitle = () => {
 
@@ -17,11 +55,11 @@ const animateTitle = () => {
             try {
                 element.innerHTML += title[i] === " " ? "&nbsp;" : title[i];
                 i++;
-                
+
             } catch (error) {
                 return;
             }
-        }else {
+        } else {
             return;
         }
 
@@ -30,11 +68,12 @@ const animateTitle = () => {
 }
 
 
+
 const showAside = (set) => {
 
     let sideBar = window.document.getElementById("side");
 
-    if(set) {
+    if (set) {
         sideBar.style.display = "block";
         sideBar.style.width = "70vw";
     } else {
