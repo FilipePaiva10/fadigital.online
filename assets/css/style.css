@@ -292,12 +292,20 @@ section {
 
     }
 
-    /* .section .home-left {
-        
-    } */
+    .section .home-left h1{
+        font-size: 35px;
+        margin-top: 0;
+    }
+
+    .section .home-left h5{
+        font-size: 17px;
+        margin-top: 10px;
+    }
+
 
     .section .home-right {
         flex: 1;
+        margin-top: 25px;
     }
 
     .section .home-right img{
@@ -319,7 +327,8 @@ section {
     }
 
     .title h1 {
-        font-size: 28px;
+        margin: 15px 0;
+        font-size: 35px;
     }
 
     .item{ 
