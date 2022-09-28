@@ -21,16 +21,11 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 100;
         let height = sec.ofssetHeight;
 
-        let id = sec.getAtribute('id');
-
         if (top >= offset && top < offset + height) {
 
             navLinksDesktop.forEach(links => {
                 links.classList.remove('active');
-
-                document.querySelector('.list li a[href*=' + id + ']').classList.add("active");
-
-            })
+            });
 
         }
     })
