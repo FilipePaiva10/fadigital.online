@@ -1,4 +1,5 @@
 window.onload = () => {
+
     animateTitle();
 
     window.scrollTo({
@@ -38,6 +39,12 @@ window.onscroll = () => {
 const animateTitle = () => {
 
     const element = window.document.getElementById("title");
+
+    if (window.screen.width < 768) {
+        element.innerText = "Sua empresa ao alcance de todos";
+
+        return;
+    } ;
 
     const title = "Sua empresa ao\nalcance de todos";
     const length = title.length;

@@ -175,11 +175,13 @@ section {
 }
 
 .title {
-    margin: 30px 0;
+    margin: 10px 0;
     text-align: center;
     font-size: 28px;
 
     width: 100%;
+
+    color: var(--main-bg-color);
 }
 
 .home-left{
@@ -263,6 +265,15 @@ section {
     z-index: 10;
 }
 
+.infoArea p{
+    color: #FFF;
+    font-size: 24px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+footer {
+    color: #FFF;
+}
 
 
 @media (max-width: 768px) {
